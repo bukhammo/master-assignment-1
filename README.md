@@ -46,7 +46,7 @@ Implement the following functions and demonstrate their functionality using the 
 
 6. Write a function `void deallocate(struct student* stud)` that frees the memory allocated to students. Check that students is not `NULL` (`NULL == 0`) before you attempt to free it.
 
-7. Write a function `void sort(struct student* stud)` that sorts students by descending score (i.e. highest scores at the top). You must sort the array *in-place* - that is, you should not allocate any additional memory.  *You may not use C sorting routines like `qsort`.  You must implement the sort yourself.*
+7. Write a function `void sort(struct student* stud)` that sorts students by descending score (i.e. highest scores at the top). You must sort the array *in-place* - that is, you should not allocate any additional memory.  *You may not use C sorting routines like `qsort()`.  You must implement the sort yourself.*
 
 ## Guidelines
 
@@ -57,14 +57,33 @@ Implement the following functions and demonstrate their functionality using the 
 
 If you have any questions regarding the assignment, please use [the course Piazza](https://piazza.com/oregonstate/fall2016/cs261/home).
 
-We will be using a test harness that calls your functions individually, but we will not call `main()`. You are responsible for making sure each function operates as specified by using main to test them.
+We will be using a test harness that calls your functions individually, but we will not call `main()`.  We will also examine your source code.  You are responsible for making sure each function operates as specified by using main to test them.
 
-In general
+In general:
 
 * A solution that does not compile is worse than...
 * ... a solution that seg faults or otherwise crashes. This is worse than...
 * ... a solution with the incorrect solution.
 
-## Submission.
+## Grading criteria
+
+The assignment is worth 100 points total.
+
+* `Q0.c`: 25 points
+  * 5 points: compiles
+  * 8 points: `fooA()` works as specified
+  * 8 points: `fooB()` works as specified
+  * 4 points: `main()` does what is specified
+* `Q1.c`: 75 points
+  * 5 points: compiles
+  * 10 points: `allocate()` behaves as specified, using `malloc()` to allocate an array with the correct number of students
+  * 10 points: `generate()` behaves as specified, assigning the correct ID and score to each student
+  * 10 points: `output()` behaves as specified, correctly printing the IDs and scores of the students
+  * 10 points: `avg()` behaves as specified, correctly computing the average of all the scores
+  * 10 points: `min()` behaves as specified, correctly computing the minimum of all the scores
+  * 10 points: `deallocate()` behaves as specified, correctly freeing the memory allocated to the passed array after making sure the pointer is not `NULL`
+  * 10 points: `sort()` behaves as specified, correctly sorting the students by descending score without using C sorting routines like `qsort()`
+
+## Submission
 
 Put your two files `Q0.c` and `Q1.c` and only those two files into a single ZIP archive (not tar, gz, etc.).  For this assignment only, you should submit the zip file via [TEACH](https://teach.engr.oregonstate.edu).
