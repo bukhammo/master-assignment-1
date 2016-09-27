@@ -67,6 +67,8 @@ In general:
 
 ## Grading criteria
 
+Your assignment will be graded by compiling it on `flip.engr.oregonstate.edu` using the provided `Makefile`, so make sure you have tested your work under those conditions.
+
 The assignment is worth 100 points total.
 
 * `Q0.c`: 25 points
