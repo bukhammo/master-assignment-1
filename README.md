@@ -86,4 +86,4 @@ The assignment is worth 100 points total.
 
 ## Submission
 
-Put your two files `Q0.c` and `Q1.c` and only those two files into a single ZIP archive (not tar, gz, etc.).  For this assignment only, you should submit the zip file via [TEACH](https://teach.engr.oregonstate.edu).
+We'll be using GitHub Classroom for this assignment.  You will submit your assignment via GitHub.  Just make sure your completed files are committed and pushed by the assignment's deadline to the `master` branch of the GitHub repo that was created for you by GitHub Classroom.
